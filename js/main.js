@@ -1,3 +1,5 @@
-$('.col-md-4')
-	.velocity( "scroll", { duration : 1000, easing: "spring", offset: "-40px" })
-	.velocity({ opacity: 1 });
+$("#section3").velocity("scroll", { 
+  container: $("#container"),
+  duration: 800,
+  delay: 500
+});

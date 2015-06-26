@@ -3,13 +3,15 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
+#container {
+  border: 1px solid gray;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Remember that a scrolling container element must have a position set. */
+  position: relative;
+  width: 50%;
+}
 
 
 
