@@ -3,15 +3,20 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#container {
+#container, .foo, .col-md-4, .col-md-12, .row {
+	position: relative;
+}
+#section3 {
+    width: 140000px;
   border: 1px solid gray;
   height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
   /* Remember that a scrolling container element must have a position set. */
   position: relative;
-  width: 50%;
 }
+
+
 
 
 
