@@ -1,1 +1,10 @@
-$('.col-md-4').velocity({ width: "100px", height: "100px" }).velocity({ top: "50px" }).velocity({ width: "33.33%", height: "100%" }).velocity({ top: "0px" })
+var $divs = $("div");
+
+$divs.velocity(
+{ opacity: 0 },
+// Open an alert bo right before the animation begins
+{
+	begin: function () { console.log("begin!"); },
+	complete: function () { console.log("completed!"); }
+}
+);
