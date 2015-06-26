@@ -1,10 +1,3 @@
-var $divs = $("div");
+$('.col-md-4').velocity({ opacity: 1 }, { display: "block" });
 
-$divs.velocity(
-{ opacity: 0 },
-// Open an alert bo right before the animation begins
-{
-	begin: function () { console.log("begin!"); },
-	complete: function () { console.log("completed!"); }
-}
-);
+$('.col-md-4').velocity( "fadeOut",  { duration: 1000 });
