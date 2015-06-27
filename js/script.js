@@ -1,6 +1,5 @@
 $.Velocity.RunSequence([
-	{ e: $(".foo"), p: { translateX: 100, opacity: 1 }, o: fadeIn.oSlow},
-	{ e: $(".bar"), p: { translateX: 200, opacity: 1 }, o: fadeIn.oSlow},
-	{ e: $(".ski"), p: { translateX: 300, opacity: 1 }, o: fadeIn.oSlow}
-
+	{ elements: $(".foo"), properties: { translateX: 100 }, options: { duration: 1000 }},
+	{ elements: $(".bar"), properties: { translateX: 200 }, options: { duration: 1000, sequenceQueue: false }},
+	{ elements: $(".ski"), properties: { translateX: 300 }, options: { duration: 1000 }}
 ]);
