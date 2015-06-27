@@ -1,2 +1,2 @@
-$(".col-md-4").velocity(fadeIn.p, fadeIn.oFast);
-// $(".col-md-4").velocity(fadeIn.p, fadeIn.oSlow);
+$(".col-md-4").velocity(fadeIn.p, fadeIn.o.fast);
+// $(".col-md-4").velocity(fadeIn.p, fadeIn.o.slow);
