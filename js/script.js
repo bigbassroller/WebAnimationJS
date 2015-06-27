@@ -1,1 +1,1 @@
-$(".col-md-4").velocity(fadeIn, 1000);
+$(".col-md-4").velocity(fadeIn.p, fadeIn.o);
