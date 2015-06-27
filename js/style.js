@@ -16,3 +16,21 @@ var fadeIn = {
 		}
 	}
 };
+var fadeOut = {
+	p: {
+		opacity: 0,
+		top: "0px"
+	},
+	o: {
+		fast: {
+			duration: 1000,
+			easing: "linear"
+		}
+	},
+	o: {
+		slow: {
+			duration: 3000,
+			easing: "linear"
+		}
+	}
+};
