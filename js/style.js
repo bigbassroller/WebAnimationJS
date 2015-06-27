@@ -1,4 +1,4 @@
-$.Velocity.mock = 50;
+$.Velocity.mock = 1;
 
 var fadeIn = {
 	p: {
@@ -30,4 +30,19 @@ $.Velocity
 			[ { boxShadowBlur: 50 }, 0.2 ],
 			[ { opacity: 0, scale: 0 }, 0.8 ]
 		]
-	});
+	})
+    .RegisterEffect("transition.flipXIn", {
+        defaultDuration: 700,
+        calls: [
+            [ { opacity: 1, rotateY: [ 0, -55 ] } ]
+        ]
+    })
+    .RegisterEffect("transition.flipXOut", {
+        defaultDuration: 700,
+        calls: [
+            [ { opacity: 0, rotateY: 55 } ]
+        ],
+        reset: { rotateY: 0 }
+    });
+
+
