@@ -1,3 +1,5 @@
+$.Velocity.mock = 50;
+
 var fadeIn = {
 	p: {
 		opacity: 1,
