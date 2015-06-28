@@ -15,6 +15,18 @@
 // $(".col-md-4").blast( { delimiter: "sentence", customClass: "myClass" } );
 // $(".col-md-4").blast( { delimiter: "word", generateValueClass: true, tag: "i" } );
 
+$("#mission-statement h2")
+	.html("The goal of The Acme Foundation is to enhance our capability to protect Acme from Acme.")
+	.blast({ delimiter: "word" } )
+		.css("opacity", 0)
+		.velocity("transition.fadeIn", { 
+			stagger: 50,
+			complete: function() {
+			 // Reverse blast
+			 $("h2").blast(false);
+			} 
+		});
+
 // $("div")
 // 	.html("The goal of The Acme Foundation is to enhance our capability to protect Acme from Acme.")
 // 	.blast({ delimiter: "word" } )
@@ -22,15 +34,23 @@
 // 		.velocity("transition.perspectiveDownIn", { 
 // 			stagger: 50
 // 		});
+// Animate the cx and x=cy coordinates of a circle
+$("circle#circle").velocity( { cx: 300, cy: 300 }, { duration: 1000 } );
+// Animate the fill and stoke of circle
+$("circle#circle").velocity({ fill: "#ff0000", storke: "#000000" }, { duration: "slow" } );
+// Animate the x and y coordinates of a rectangle
+$("rect#rect").velocity( { x: 100, y: 100 }, { duration: "fast" } );
+// Animate the dimensions of a rectangle
+$("rect#rect").velocity( { width: 200, height: 200 }, { duration: "slow" } );
+// Animate the radius of a circle
+$("circle#circle").velocity({ r: 100 }, { duration: "slow" } );
 
-// $("#mission-statement h2")
-// 	.blast({ delimiter: "character" } ).each(function(i, element) {
-// 		var adjustOpacity = 1 - i/50;
-// 		element.style.opacity = adjustOpacity;
-// 	})
 
-$("#mission-statement h2")
-	.blast({ delimiter: "character" } ).each(function(i, element) {
-		var adjustedBlue = i*3;
-		element.style.color = "rgb( 0, 0, " + adjustedBlue + ")";
-	});
+
+
+
+
+
+
+
+
