@@ -45,6 +45,13 @@ $("rect#rect").velocity( { width: 200, height: 200 }, { duration: "slow" } );
 // Animate the radius of a circle
 $("circle#circle").velocity({ r: 100 }, { duration: "slow" } );
 
+// Move one circle toward the left
+$("#circleLeft").velocity({ cx: "+=85px" }, { duration: "slow", easing: "spring" } );
+$("#circleRight").velocity({ cx: "+=115px" }, { duration: "slow", easing: "spring" } );
+$("svg").on("mouseover", function() {
+	$("#circleLeft, #circleRight").velocity("reverse");
+});
+
 
 
 
