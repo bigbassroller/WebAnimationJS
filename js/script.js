@@ -15,15 +15,19 @@
 // $(".col-md-4").blast( { delimiter: "sentence", customClass: "myClass" } );
 // $(".col-md-4").blast( { delimiter: "word", generateValueClass: true, tag: "i" } );
 
-$("#mission-statement h2")
-	.html("The goal of The Acme Foundation is to enhance our capability to protect Acme from Acme.")
-	.blast({ delimiter: "word" } )
-		.css("opacity", 0)
-		.velocity("transition.fadeIn", { 
-			stagger: 50,
-			complete: function() {
-			 // Reverse blast
-			 $("h2").blast(false);
-			} 
-		});
+// $("#mission-statement h2")
+// 	.html("The goal of The Acme Foundation is to enhance our capability to protect Acme from Acme.")
+// 	.blast({ delimiter: "word" } )
+// 		.css("opacity", 0)
+// 		.velocity("transition.fadeIn", { 
+// 			stagger: 50,
+// 			complete: function() {
+// 			 // Reverse blast
+// 			 $("h2").blast(false);
+// 			} 
+// 		});
 
+$("div").blast({ delimiter: "word" })
+	.eq(2)
+	.velocity( { opacity: 0 }, function() { $(this).text("running"); } )
+	.velocity( { opacity: 1 });
