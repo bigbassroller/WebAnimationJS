@@ -19,7 +19,7 @@ $.Velocity
 	.RegisterEffect("shadowIn", {
 		defaultDuration: 1000,
 		calls: [
-			[ { opacity: 1, scale : 1 }, 0.4 ],
+			[ {  }, 0.4 ],
 			[ { boxShadowBlur: 50 }, 0.6 ]
 		]
 	})
